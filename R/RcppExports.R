@@ -2,6 +2,6 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 MinkowskiSumEK <- function(rmesh1, rmesh2, triangulate, normals, triangulate1, triangulate2) {
-    .Call('_MinkowskiSum_MinkowskiSumEK', PACKAGE = 'MinkowskiSum', rmesh1, rmesh2, triangulate, normals, triangulate1, triangulate2)
+    .Call(`_MinkowskiSum_MinkowskiSumEK`, rmesh1, rmesh2, triangulate, normals, triangulate1, triangulate2)
 }
 
