@@ -23,6 +23,5 @@ LinkingTo:
     RcppCGAL,
     RcppEigen
 Encoding: UTF-8
-LazyData: true
 SystemRequirements: C++ 17, gmp, mpfr
 RoxygenNote: 7.2.1
