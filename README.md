@@ -14,6 +14,10 @@ Minkowski addition of two meshes.
 
 ![](https://raw.githubusercontent.com/stla/MeshesOperations/master/inst/screenshots/TetrahedronPlusTruncatedIcosahedron.gif)
 
+- Septuaginta + great stellated dodecahedron:
+
+![](https://raw.githubusercontent.com/stla/MinkowskiSum/main/inst/screenshots/septuaginta_gsdodecahedron.gif)
+
 
 ## License
 
