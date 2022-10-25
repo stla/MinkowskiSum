@@ -20,7 +20,7 @@ output mesh}
 }
 \value{
 A mesh of class \code{cgalMesh} (list with \code{vertices}, 
-  \code{faces}, and more).
+  \code{faces}, and more; see \code{\link[PolygonSoup:Mesh]{Mesh}}).
 }
 \description{
 Returns the mesh defined as the Minkowski sum of the

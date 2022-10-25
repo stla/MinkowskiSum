@@ -12,7 +12,7 @@
 #'   output mesh
 #'
 #' @return A mesh of class \code{cgalMesh} (list with \code{vertices}, 
-#'   \code{faces}, and more).
+#'   \code{faces}, and more; see \code{\link[PolygonSoup:Mesh]{Mesh}}).
 #'
 #' @export
 #'
