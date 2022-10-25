@@ -18,6 +18,11 @@ Minkowski addition of two meshes.
 
 ![](https://raw.githubusercontent.com/stla/MinkowskiSum/main/inst/screenshots/septuaginta_gsdodecahedron.gif)
 
+- Stanford bunny + sphere
+
+![](https://raw.githubusercontent.com/stla/MinkowskiSum/main/inst/screenshots/bunny.png)
+
+
 
 ## License
 
