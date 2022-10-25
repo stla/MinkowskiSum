@@ -3,3 +3,4 @@
 ^inst/essais$
 ^\.github$
 ^data-raw$
+^cran-comments\.md$
