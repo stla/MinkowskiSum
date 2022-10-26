@@ -6,7 +6,7 @@ Authors@R:
     person("Stéphane", "Laurent", , "laurent_step@outlook.fr", role = c("aut", "cre"))
 Maintainer: Stéphane Laurent <laurent_step@outlook.fr>
 Description: Computes the Minkowski sum of two 3D meshes, resulting in a
-    new 3D mesh. Minkowski addition has applications in mathematical
+    new 3D mesh. The Minkowski addition has applications in mathematical
     morphology and 3D computer graphics. The computations are performed by
     the 'C++' library 'CGAL' (<https://www.cgal.org/>).
 License: GPL-3
