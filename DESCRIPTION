@@ -1,6 +1,6 @@
 Type: Package
 Package: MinkowskiSum
-Title: Minkowski Addition between 3D Meshes
+Title: Minkowski Addition Between 3D Meshes
 Version: 1.0.0
 Authors@R: 
     person("Stéphane", "Laurent", , "laurent_step@outlook.fr", role = c("aut", "cre"))
