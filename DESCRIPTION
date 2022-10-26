@@ -1,15 +1,19 @@
-Package: MinkowskiSum
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
+Package: MinkowskiSum
+Title: Minkowski Addition between 3D Meshes
+Version: 1.0.0
 Authors@R: 
     person("Stéphane", "Laurent", , "laurent_step@outlook.fr", role = c("aut", "cre"))
 Maintainer: Stéphane Laurent <laurent_step@outlook.fr>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: Computes the Minkowski sum of two 3D meshes, resulting in a
+    new 3D mesh. Minkowski addition has applications in mathematical
+    morphology and 3D computer graphics. The computations are performed by
+    the 'C++' library 'CGAL' (<https://www.cgal.org/>).
 License: GPL-3
 URL: https://github.com/stla/MinkowskiSum
 BugReports: https://github.com/stla/MinkowskiSum/issues
+Depends: 
+    R (>= 2.10)
 Imports: 
     data.table,
     gmp,
@@ -23,8 +27,6 @@ LinkingTo:
     RcppCGAL,
     RcppEigen
 Encoding: UTF-8
-SystemRequirements: C++ 17, gmp, mpfr
-RoxygenNote: 7.2.1
-Depends: 
-    R (>= 2.10)
 LazyData: true
+RoxygenNote: 7.2.1
+SystemRequirements: C++ 17, gmp, mpfr

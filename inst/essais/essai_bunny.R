@@ -5,7 +5,7 @@ spheremesh <- MeshesTools::sphereMesh(r= 0.01, iterations = 3L)
 
 mesh <- MinkowskiSum(bunnymesh, spheremesh)
 
-rglmesh <- toRGL(mesh)
+rglmesh <- addNormals(toRGL(mesh))
 
 rgl::shade3d(rglmesh, color = "brown")
 
