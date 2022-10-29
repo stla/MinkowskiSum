@@ -65,7 +65,7 @@ MinkowskiSum <- function(mesh1, mesh2, triangulate = TRUE, normals = FALSE){
   vft1 <- getVFT(mesh1)
   triangulate1 <- !vft1[["isTriangle"]]
   vft2 <- getVFT(mesh2)
-  triangulate2 <- !vft1[["isTriangle"]]
+  triangulate2 <- !vft2[["isTriangle"]]
   mesh <- MinkowskiSumEK(
     vft1[["rmesh"]], vft2[["rmesh"]], triangulate, normals,
     triangulate1, triangulate2

@@ -17,16 +17,21 @@ Rcpp::List MinkowskiSumEK(const Rcpp::List rmesh1,
   EMesh3 mesh2 = 
     makeSurfMesh<EMesh3, EPoint3>(rmesh2, true, triangulate2, false);
   Message("... done.\n");
+  Message("nef1");
   ENef3 nef1(mesh1);
+  Message("nef1");
   ENef3 nef2(mesh2);
+  Message("sum");
   ENef3 nef = CGAL::minkowski_sum_3(nef1, nef2);
   Rcpp::DataFrame Edges0;
   if(triangulate) {
+    Message("convert nef no triangul");
     EMesh3 mesh0;
     CGAL::convert_nef_polyhedron_to_polygon_mesh(nef, mesh0, false);
     Edges0 = getEdges<EK, EMesh3, EPoint3>(mesh0);
   }
   EMesh3 mesh;
+  Message("convert nef");
   CGAL::convert_nef_polyhedron_to_polygon_mesh(nef, mesh, triangulate);
   Rcpp::List rmesh = RSurfEKMesh(mesh, normals);
   if(triangulate) {
