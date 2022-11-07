@@ -160,9 +160,9 @@ MeshT makeSurfMesh(
 template EMesh3 makeSurfMesh<EMesh3, EPoint3>(
   const Rcpp::List, const bool, const bool, const bool
 );
-template Mesh3 makeSurfMesh<Mesh3, Point3>(
-    const Rcpp::List, const bool, const bool, const bool
-);
+// template Mesh3 makeSurfMesh<Mesh3, Point3>(
+//     const Rcpp::List, const bool, const bool, const bool
+// );
 
 QMesh3 makeSurfQMesh(
   const Rcpp::List rmesh, const bool clean, const bool triangulate,

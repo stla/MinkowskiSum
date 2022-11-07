@@ -6,7 +6,7 @@
 
 #define CGAL_EIGEN3_ENABLED 1
 
-#include <CGAL/Exact_predicates_inexact_constructions_kernel.h>
+//#include <CGAL/Exact_predicates_inexact_constructions_kernel.h>
 #include <CGAL/Exact_predicates_exact_constructions_kernel.h>
 #include <CGAL/Kernel/global_functions.h>
 #include <CGAL/Surface_mesh.h>
@@ -27,15 +27,15 @@
 #include <CGAL/boost/graph/convert_nef_polyhedron_to_polygon_mesh.h>
 #include <CGAL/minkowski_sum_3.h>
 
-#include <CGAL/boost/graph/copy_face_graph.h> ////
+//#include <CGAL/boost/graph/copy_face_graph.h> ////
 #include <CGAL/Lazy_exact_nt.h>
 #include <CGAL/MP_Float.h>
 
 // -------------------------------------------------------------------------- //
-typedef CGAL::Exact_predicates_inexact_constructions_kernel K; ////
+//typedef CGAL::Exact_predicates_inexact_constructions_kernel K; ////
 typedef CGAL::Exact_predicates_exact_constructions_kernel EK;
-typedef K::Point_3 Point3; ////
-typedef CGAL::Surface_mesh<Point3> Mesh3; ////
+//typedef K::Point_3 Point3; ////
+//typedef CGAL::Surface_mesh<Point3> Mesh3; ////
 typedef EK::Point_3 EPoint3;
 typedef CGAL::Surface_mesh<EPoint3> EMesh3;
 typedef EK::Vector_3 EVector3;
@@ -45,7 +45,7 @@ typedef QK::Point_3 QPoint3;
 typedef QK::Vector_3 QVector3;
 typedef CGAL::Nef_polyhedron_3<EK> ENef3;
 
-typedef CGAL::Nef_polyhedron_3<K> Nef3; ////
+//typedef CGAL::Nef_polyhedron_3<K> Nef3; ////
 typedef CGAL::Lazy_exact_nt<CGAL::MP_Float> NT;
 
 // -------------------------------------------------------------------------- //
