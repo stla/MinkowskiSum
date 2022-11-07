@@ -11,6 +11,16 @@ Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
 Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
 #endif
 
+// test
+bool test();
+RcppExport SEXP _MinkowskiSum_test() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(test());
+    return rcpp_result_gen;
+END_RCPP
+}
 // MinkowskiSumEK
 Rcpp::List MinkowskiSumEK(const Rcpp::List rmesh1, const Rcpp::List rmesh2, const bool triangulate, const bool normals, const bool triangulate1, const bool triangulate2);
 RcppExport SEXP _MinkowskiSum_MinkowskiSumEK(SEXP rmesh1SEXP, SEXP rmesh2SEXP, SEXP triangulateSEXP, SEXP normalsSEXP, SEXP triangulate1SEXP, SEXP triangulate2SEXP) {
@@ -29,6 +39,7 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
+    {"_MinkowskiSum_test", (DL_FUNC) &_MinkowskiSum_test, 0},
     {"_MinkowskiSum_MinkowskiSumEK", (DL_FUNC) &_MinkowskiSum_MinkowskiSumEK, 6},
     {NULL, NULL, 0}
 };

@@ -28,6 +28,8 @@
 #include <CGAL/minkowski_sum_3.h>
 
 #include <CGAL/boost/graph/copy_face_graph.h> ////
+#include <CGAL/Lazy_exact_nt.h>
+#include <CGAL/MP_Float.h>
 
 // -------------------------------------------------------------------------- //
 typedef CGAL::Exact_predicates_inexact_constructions_kernel K; ////
@@ -44,6 +46,7 @@ typedef QK::Vector_3 QVector3;
 typedef CGAL::Nef_polyhedron_3<EK> ENef3;
 
 typedef CGAL::Nef_polyhedron_3<K> Nef3; ////
+typedef CGAL::Lazy_exact_nt<CGAL::MP_Float> NT;
 
 // -------------------------------------------------------------------------- //
 namespace PMP = CGAL::Polygon_mesh_processing;
