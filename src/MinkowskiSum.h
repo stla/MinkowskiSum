@@ -5,6 +5,7 @@
 #include <Rcpp.h>
 
 #define CGAL_EIGEN3_ENABLED 1
+#define CGAL_ALWAYS_ROUND_TO_NEAREST
 
 //#include <CGAL/Exact_predicates_inexact_constructions_kernel.h>
 #include <CGAL/Exact_predicates_exact_constructions_kernel.h>
